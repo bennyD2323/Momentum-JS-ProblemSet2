@@ -2,7 +2,16 @@
 // member of the array, and returns a new array with that member removed.
 // For example, `remove(['Cadence', 'Ordel', 'Marion'], 'Marion')` results
 // in `['Cadence', 'Ordel']`.
-//
+
+function remove(group, indiv) {
+    let newArray = [];
+    for (let name of group) {
+    if (name != indiv) {
+        newArray.push(name);
+    }
+}
+    return newArray;
+    }   
 // If the potential member is not in the array, return the array unchanged.
 // If the potential member is in the array, remove all instances of it from the array.
 
@@ -12,12 +21,35 @@
 // 3. Create a function called "sum" that takes an array of numbers and
 // returns the sum of those numbers.
 
+function sum(numbas) {
+let sum = 0;
+    for (let score of numbas) {
+        sum += score;
+} return sum;
+}
 // 4. Create a function called "average" that takes an array of numbers
 // and returns the average of those numbers.
+function average(nums) {
+let avg = sum(nums);
+    if(avg === 0)
+    return;
+ return (ave / nums.length);
+}
+//somehow this was evaluated to correct on the homework page, and then broke. 
+
 
 // 5. Create a function called "minimum" that takes an array of numbers and
 // returns the smallest number in that array.
-
+// function minimum(words) 
+//     let shortestWord = null
+//     for (let word of words) {
+//      if (shortestWord === null) 
+//      shortestWord = word;
+//     else if(word < shortestWord){
+//         shortestWord = Math.min(word)
+// }
+// return shortestWord;
+//     }
 // 6. There are many techniques to sort arrays in programming. Your programming
 // language will likely include the ability to do this. We are going to
 // implement sorting ourselves, however.
