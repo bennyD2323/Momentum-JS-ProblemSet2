@@ -33,7 +33,7 @@ function average(nums) {
 let avg = sum(nums);
     if(avg === 0)
     return;
- return (ave / nums.length);
+ return (avg / nums.length)
 }
 //somehow this was evaluated to correct on the homework page, and then broke. 
 
